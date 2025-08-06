@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-div">
+        <img src="./images/logo.svg" class="logo" alt="logo" />
+      </div>
+      <div class="card">
+        <div class="form-div">
+          <form class="form">
+            <!--bill div-->
+            <div class="bill-div">
+              <div class="bill-label-div">
+                <label>Bill</label>
+              </div>
+              <div class="bill-input-div">
+                <div class="input-icon-wrapper">
+                  <img
+                    src="./images/icon-dollar.svg"
+                    class="icon-dollar"
+                    alt="icon-dollar"
+                  />
+                  <input
+                    type="number"
+                    class="bill-amt"
+                    id="bill-amt"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+            </div>
+            <!--select tip div-->
+            <div class="tip-div">
+              <div class="tip-label-div">
+                <label>Select Tip %</label>
+              </div>
+              <div class="tip-btns-div">
+                <button class="btn-5p selected">5%</button>
+                <button class="btn-10p selected">10%</button>
+                <button class="btn-15p selected">15%</button>
+                <button class="btn-25p selected">25%</button>
+                <button class="btn-50p selected">50%</button>
+                <input
+                  type="number"
+                  class="tip-custom-amt"
+                  id="tip-custom-amt"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+            <!--people-div-->
+            <div class="people-div">
+              <div class="people-label-div">
+                <label>Number of People</label>
+                <p class="error-msg">Can't be zero</p>
+              </div>
+              <div class="people-input-div">
+                <div class="input-icon-wrapper">
+                  <img
+                    src="./images/icon-person.svg"
+                    class="icon-person"
+                    alt="icon-person"
+                  />
+                  <input
+                    class="people-input"
+                    id="people-input"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--grid right-->
+        <div class="calc-div">
+          <div class="tip-amt-div">
+            <div class="tip-amt">
+              <p>Tip Amount</p>
+              <p class="per-div">/ person</p>
+            </div>
+            <div class="calc-tip-amt">$ 0.00</div>
+          </div>
+          <div class="total-amt-div">
+            <div class="total-amt">
+              <p>Total</p>
+              <p class="per-div">/ person</p>
+            </div>
+            <div class="calc-total-amt">$ 0.00</div>
+          </div>
+          <div class="reset-btn-div">
+            <button class="reset-btn">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset-->
+    <script src="./script.js"></script>
+  </body>
+</html>

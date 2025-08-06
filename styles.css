@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Space Mono", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  background-color: hsl(185, 41%, 84%);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  background-color: hsl(0, 100%, 100%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.form {
+  padding: 1rem;
+}
+.form label {
+  color: hsl(186, 14%, 43%);
+  font-weight: 600;
+  font-size: 12px;
+}
+.bill-div,
+.people-div,
+.tip-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.input-icon-wrapper {
+  position: relative;
+  width: 100%;
+}
+.bill-amt,
+.people-input,
+.tip-custom-amt {
+  max-width: auto;
+  width: 100%;
+  height: 40px;
+  padding: 0 0.2rem 0 0.2rem;
+  background-color: hsl(189, 47%, 97%);
+  border: 2px solid transparent;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 20px;
+}
+.bill-amt::placeholder,
+.people-input::placeholder,
+.tip-custom-amt::placeholder {
+  font-size: 20px;
+  color: hsl(184, 14%, 56%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.bill-amt:active,
+.bill-amt:focus,
+.tip-custom-amt:active,
+.tip-custom-amt:focus {
+  border: 2px solid hsl(172, 67%, 45%);
+  outline: none;
+  border-radius: 0.5rem;
+}
+.icon-dollar,
+.icon-person {
+  position: absolute;
+  left: 0.6rem;
+  top: 10px;
+}
+.tip-btns-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.tip-btns-div button {
+  max-width: 100px;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  color: hsl(0, 100%, 100%);
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+.selected {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(0, 100%, 100%);
+}
+.tip-btns-div button:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+.tip-custom-amt {
+  max-width: 100px;
+  width: 100%;
+  border: none;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 47%, 97%);
+}
+.tip-custom-amt::placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.people-label-div {
+  display: flex;
+  justify-content: space-between;
+}
+.error-msg {
+  display: none;
+  color: rgb(226, 56, 56);
+  font-size: 12px;
+  font-weight: 600;
+}
+.calc-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.tip-amt-div,
+.total-amt-div {
+  color: hsl(0, 100%, 100%);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  gap: 3rem;
+}
+.per-div {
+  color: hsl(184, 14%, 56%);
+  font-weight: 600;
+  font-size: 12px;
+}
+.calc-tip-amt,
+.calc-total-amt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(172, 67%, 45%);
+  font-weight: 800;
+  font-size: 30px;
+}
+.reset-btn-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.reset-btn {
+  background-color: hsl(172, 67%, 45%, 0.6);
+  border: none;
+  max-width: 200px;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 15px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 600;
+  opacity: 50%;
+}
+.reset-btn:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+/*mobile design*/
+@media (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
