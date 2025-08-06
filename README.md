@@ -24,7 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![preview](https://github.com/user-attachments/assets/cc36c07f-9cd3-4558-a87c-47b31075300d)
+
 
 ### Links
 
